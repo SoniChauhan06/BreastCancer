@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>Breast Cancer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial"> 
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/5072316/pexels-photo-5072316.jpeg?cs=srgb&dl=pexels-ave-calvar-martinez-5072316.jpg&fm=jpg");
+  min-height: 90%;
+}
+</style>
+
+<body>
+<p>
+<font size="3">
+</font>
+</p>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button">Our Mission</a>
+    <a href="#Detection and Prediction" class="w3-bar-item w3-button">Prediction</a>
+    <a href="#Suggestions" class="w3-bar-item w3-button">What to do next</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Cancer's Tough, But So Are You</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:80px"><br>Helping Women Now</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b><br>Helping Women Now</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Benign and Malignant Cancer types</a></p>
+  </div>
+</header>
+
+<!-- About -->
+<div class="w3-container w3-lightpink w3-padding-64 w3-xxlarge" id="ABOUT">
+  <div class="w3-content">
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://images.pexels.com/photos/5483003/pexels-photo-5483003.jpeg?cs=srgb&dl=pexels-anna-tarazevich-5483003.jpg&fm=jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+  <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Our mission</h1><br>
+      <h5 class="w3-center">Education and awareness should not stop during the pandemic. 
+It is a privilege to have access to technology and we should use it to make a better tomorrow.
+Patients are experiencing better outcomes because of early diagnosis.</h5>
+      <h5 class="w3-center">We provide help and inspire hope to those
+affected by breast cancer through early detection with our prediction model and
+education.</h5>
+    </div>
+  </div>
+  
+    
+    
+<!-- Detection and Prediction -->
+<div class="w3-container w3-padding-64 w3-pink w3-grayscale-min w3-xlarge" id="Detection and Prediction">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Prediction</h1>
+    <p>According to the American Cancer Society, when breast cancer is detected early, and is in the localized stage, the 5-year relative survival rate is 99%. Early detection includes doing monthly breast self-exams, and scheduling regular clinical breast exams and mammograms.</p>
+    <p><span class="w3-tag">FYI!</span> A clinical breast exam is performed by a healthcare professional who is trained to recognize many different types of abnormalities and warning signs through mamograms. Mamograms is an x-ray that allows to examine the breast tissue for any suspicious areas. The breast is exposed to a small dose of ionizing radiation that produces an image of the breast tissue.</p>
+    <p class="w3-center"><strong>Predict</strong> today, if your cell growth is Benign(non-cancerous) or Malignant(cancerous) </p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Cell Thickness" required name="Cell Thickness"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Cell Size" required name="Cell Size"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Cell Shape" required name="Cell Shape"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Marg.adhesion" required name="Marg.adhesion"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Epith.c.size" required name="Epith.c.size"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Bare.nuclei" required name="Bare.nuclei"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Bl.cromatin" required name="Bl.cromatin"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Normal.nucleoli" required name="Normal.nucleoli"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">PREDICT</button></p>
+    </form>
+  </div>
+</div>
+    
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="Suggestions">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">What to do next</h1>
+    <p>In general, there are five treatment options, and most treatment plans include a combination of the following: surgery, radiation, hormone therapy, chemotherapy, and targeted therapies. Some are local, targeting just the area around the tumor. Others are systemic, targeting your whole body with cancer fighting agents.</p>
+    <p><strong>The Bottom Line is</strong></p>
+    <p>A tumor is a mass of abnormal cells. <strong>Many types of benign tumors are harmless</strong> and can be left alone. Others can cause serious problems or become cancerous.
+
+<strong>Malignant tumors can be life-threatening</strong>. Benign or malignant, treatment depends on the specifics of the tumor.
+
+If you feel a new lump anywhere on your body, see your doctor as soon as you can. Early diagnosis gives you more treatment options and a potentially better outcome.</p>
+    
+    
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
